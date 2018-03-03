@@ -10,7 +10,7 @@ public class ex3 extends Programa {
 
 	@Override
 	public void inicio() {
-		int[] numeros = new int[5];
+		int[] numeros = new int[10];
 		for (int x = 0; x < numeros.length; x++) {
 			numeros[x] = leInteiro("Informe os números: ", x+1);
 		}
@@ -35,7 +35,7 @@ public class ex3 extends Programa {
 		}
 		escrevaL("");
 		escrevaL("Números impares em ordem decrescente");	
-		for (int y = 4; y < numeros.length; y--) {
+		for (int y = numeros.length - 1; y >= 0; y--) {     //----> o Y = NUMEROS.LENGTH será o 10 - 1, pois conta o 0
 			if (numeros[y] % 2 != 0)
 				escreva(numeros[y], "  ");
 		} 
